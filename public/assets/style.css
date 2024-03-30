@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+     font-family: "Zilla Slab", serif;
+     font-weight: 400;
+     background-color: white;
+     color: black;
+}
+
+@media (min-height: 200px) {
+     p {
+          overflow: hidden;
+     }
+}
+p {
+     max-height: 400px;
+}
+
+.card {
+     border-color: lavender;
+     border-radius: 12px;
+     border-width: 1px;
+     background: transparent;
+}
+.card-header {
+     text-align: left;
+     font-weight: 500;
+     font-size: 15px;
+}
+.card:hover {
+     background: lavender;
+}
+
+.btn:hover {
+     background-color: lavender;
+     opacity: 50%;
+}
+.btn {
+     background-color: lavender;
+     font-weight: 700;
+     text-align: right;
+     color: black;
+     border: 1px solid black;
+}
+
+.input-box, .titleArea, .textArea, .titleAreaModal, .textAreaModal {
+     color: black;
+     background: lavender;
+     resize: none;
+     padding: 10px;
+     border-radius: 8px;
+     border: 1px solid lavender;
+     outline: none;
+     box-shadow: none;
+}
+
+#display-2 {
+     padding: 15px;
+     text-align: center;
+     font-weight: 500;
+     border-bottom: solid lavender;
+     border-width: 1px;
+     margin-right: 2rem;
+     margin-left: 2rem;
+}
+#display-4 {
+     text-align: center;
+     font-weight: 500;
+     color: white;
+}
+#title {
+     display: block;
+     padding: 5px;
+}
+
+.lhead {
+     color: lavender;
+     font-weight: bold;
+     font-size: 1.8rem;
+}
+
+.lhead:hover {
+     text-decoration: none;
+     color: lavender;
+}
+
+@media (min-width: 576px) {
+     .card-columns {
+          column-count: 2;
+          min-width: 576px;
+          grid-column-gap: 10px;
+     }
+     .container {
+          width: 250px;
+     }
+}
+@media (min-width: 768px) {
+     .card-columns {
+          column-count: 3;
+          min-width: 768px;
+          grid-column-gap: 10px;
+     }
+     .container {
+          width: 250px;
+     }
+}
+@media (min-width: 992px) {
+     .card-columns {
+          column-count: 4;
+          min-width: 992px;
+          grid-column-gap: 10px;
+     }
+     .container {
+          width: 250px;
+     }
+}
+@media (min-width: 1200px) {
+     .card-columns {
+          column-count: 5;
+          min-width: 1200px;
+          grid-column-gap: 10px;
+     }
+     .container {
+          width: 250px;
+     }
+}
+
+.modal-bg {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     visibility: hidden;
+     opacity: 0;
+     transition: visibility 0.5s, opacity 0.5s;
+}
+.bg-active {
+     color: black;
+     visibility: visible;
+     opacity: 1;
+}
+.modal-btn {
+     color: black;
+}
+.modal-in {
+     position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: lavender;
+     width: 800px;
+     height: 400px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 10px;
+}
+.modal-close {
+     color: lavender;
+     position: absolute;
+     top: 0px;
+     left: 775px;
+     font-size: 30px;
+     font-weight: bold;
+     transform: rotate(45deg);
+     cursor: pointer;
+}
+.titleAreaModal {
+     height: 50%;
+     width: 100%;
+     resize: none;
+     padding: 10px;
+     border-radius: 8px;
+     outline: none;
+}
+.textAreaModal {
+     height: 250px;
+     width: 700px;
+     resize: none;
+     padding: 10px;
+     border-radius: 8px;
+     outline: none;
+     scrollbar-base-color: lavender;
+}
+
+footer {
+     height: 30px;
+     clear: both;
+     position: relative;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #202124;
+     color: grey;
+     text-align: center;
+}
+
+.link {
+     color: black;
+     text-decoration: underline;
+}
+
+.blinking-cursor {
+     white-space: nowrap;
+     overflow: hidden;
+     text-align: center;
+     font-family: "Source Code Pro", monospace;
+     font-size: 28px;
+     color: rgba(255, 255, 255, 0.7);
+}
