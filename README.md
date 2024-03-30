@@ -27,3 +27,9 @@ To run the project locally, follow the steps below:
   ```sh
   npm start
   ```
+## **Login Page**
+![alt text](<Screenshot (226).png>)
+## **Register Page**
+![alt text](<Screenshot (227).png>)
+## **Notes Page**
+![alt text](<Screenshot (229).png>) 
